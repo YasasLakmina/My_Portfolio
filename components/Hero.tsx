@@ -1,40 +1,30 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import ShineButton from "./ui/DownloadButton";
+import { FaDownload } from "react-icons/fa";
+import DownloadButton from "./ui/DownloadButton";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
-      <div>
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
-          className="-top-10 -left-10  h-[80vh] w-[50vw] "
-          fill="purple"
-        />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw] " fill="blue" />
-      </div>
-      <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
-        {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      </div>
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic With Next.js
-          </h2>
-          <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamsles Experence"
-          />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Yasas, a Frontend Developer based in Sri Lanka
-          </p>
+    <section className="h-full">
+      <div className="container mx-auto h-full">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+          <div className="text-center xl:text-left">
+            <span className="text-xl">Software Developer</span>
+            <h1 className="h1">
+              Hello I'm <br />{" "}
+              <span className="text-green">Yasas Rajapakshe</span>
+            </h1>
+            <p className="max-w-[500px] mb-9 text-white/80">
+              I excel at crafting elegant digital experiences and I am
+              proficient in various programming languages and technologies
+            </p>
+          </div>
+          <div>photo</div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
