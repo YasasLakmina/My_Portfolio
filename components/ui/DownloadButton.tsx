@@ -22,7 +22,7 @@ const DownloadButton = ({
   otherClasses?: string;
 }) => {
   return (
-    <button className="inline-flex h-12 animate-shimmer gap-4 items-center justify-center rounded-md border border-green bg-[linear-gradient(110deg,#065F46,45%,#047857,55%,#065F46)] bg-[length:200%_100%] px-7 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-200">
+    <button className="inline-flex h-10 animate-shimmer uppercase gap-3 items-center justify-center rounded-md border border-green bg-[linear-gradient(110deg,#065F46,45%,#047857,55%,#065F46)] bg-[length:200%_100%] px-4 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 focus:ring-offset-green-200">
       {position === "left" && icon}
       {title}
       {position === "right" && icon}
