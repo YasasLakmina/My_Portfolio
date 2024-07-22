@@ -6,13 +6,14 @@ import { FaDownload } from "react-icons/fa";
 import DownloadButton from "./ui/DownloadButton";
 import Social from "./ui/Social";
 import Photo from "./ui/Photo";
+import Stats from "./ui/Stats";
 
 const Hero = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <TextGenerateEffect
               className="h1"
@@ -24,10 +25,7 @@ const Hero = () => {
               proficient in various programming languages and technologies
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a
-                href="./Resume.pdf"
-                download="Resumé_Yasas Lakmina" // meka thmi bn download wena file eke name eka wenne
-              >
+              <a href="./Resume.pdf" download="Resumé_Yasas Lakmina">
                 <DownloadButton
                   title="Download Resumé"
                   icon={<FaDownload />}
@@ -42,11 +40,12 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="order-1 xl:order-none mb-10 md-8 xl:mb-0">
             <Photo />
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 };
